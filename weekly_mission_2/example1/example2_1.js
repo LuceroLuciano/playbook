@@ -1,6 +1,6 @@
 // Ejemplo 2: Crear un objeto con propiedades
 const myObject2 = {
-    name: "Lucero",
+    name: "Luz",
     age: 23
 }
 
