@@ -4,7 +4,7 @@ const pet = {
     // Esta es una funcion que se guarda como propiedad
     sayHello: function(){
         // this.name hace refferencia a la propiedad del objeto
-        console.log(`${this.name} te saluda en español!`)
+        console.log(`${this.name} te saluda en español!!!`)
     }
 }
 
