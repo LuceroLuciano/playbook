@@ -3,7 +3,7 @@ const myPet = {
     name: "Woopa", // Es el nombre del ajolonauta 
     // funcion que recibe el parametro
     sayHelloToMyPet: function(yourPet){
-        console.log(`${this.name} say's hello to ${yourPet} 💟`)
+        console.log(`${this.name} say's hello to ${yourPet} 💟!!!`)
     }
 }
 
