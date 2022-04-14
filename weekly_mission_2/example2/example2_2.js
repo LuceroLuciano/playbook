@@ -7,7 +7,7 @@ console.log("Ejemplo 2: Calculo de la suma de los elementos de una lista \n")
 console.log(sum)
 
 
-// Imprimiento la suma de los elementos de la lista con un ciclo for
+// Imprimiendo la suma de los elementos de la lista con un ciclo for
 /*let suma = 0;
 for (num = 0; num < numbers2.length; num++){
     // suma los elementos de la lista
