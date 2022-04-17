@@ -1,4 +1,6 @@
 // Ejemplo 7: Setters para modificar los atributos del objeto
+
+// Clase
 class Ninja {
     constructor(name, age, ninjaRank) {
         this.name = name
