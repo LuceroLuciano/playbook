@@ -1,86 +1,49 @@
 // Ejemplo 7: Setters para modificar los atributos del objeto
 
 // Clase
-class Ninja {
-    constructor(name, age, ninjaRank) {
+class MissionComander {
+    constructor(name, mission) {
         this.name = name
-        this.age = age
-        this.ninjaRank = ninjaRank
-        this.aldea = null
-        this.itsAliive = true
+        this.mission = mission
+        this.students = 0
+        this.lives = 0
+    }
+   
+    // Metodo getter
+    get getStudents() {
+        return this.students
     }
 
     // Metodo getter
-    getInfo() {
-        return `
-            NINJA, ${this.name.toUpperCase()}
-            ${'---'.repeat(10)}
-            Edad: ${this.age}
-            Rango ninja: ${this.ninjaRank.rank}
-            Ascenso a chunin: ${this.ninjaRank.promotionToChunin}
-            Aldea: ${this.aldea}
-            ${'---'.repeat(10)}
-            Fecha de creacion: ${this.dateCreated}
-        `
-    }
-    
-    // Metodo getter
-    get getStatus() {
-        return this.itsAliive
-    }
-
-    // Metodo getter
-    get getAldea() {
-        return this.aldea
+    get getLives() {
+        return this.lives
     }
 
     // Metodo setter
-    set setStatus(status) {
-        this.itsAliive = status
+    set setStudents(students) {
+        this.students = students
     }
 
     // Método setter
-    set setAldea(aldea) {
-        this.aldea = aldea
+    set setLives(lives) {
+        this.lives = lives
     }
 }
 
 // instanciar objeto1
-const itachi = new Ninja(
-    'Itachi',
-    '21',
-    {
-        rank: 'Ambu',
-        record: '012110',
-        promotionToChunin: '10 años'
-    }
+const missionCommanderNode = new MissionComander(
+    'Carlo',
+    'NodeJS'
 )
 
-// Instanciar objeto2
-const rocklee = new Ninja(
-    'Rock Lee',
-    '32',
-    {
-        rank: 'Jonin',
-        record: '012561',
-        promotionToChunin: '15 años'
-    }
-)
+console.log("Ejemplo 7: Setters para modificar los atributos del objeto")
 
-itachi.setAldea = 'Konoha'
-itachi.setStatus = false
+console.log(missionCommanderNode.getStudents) // 0 por default
+console.log(missionCommanderNode.getLives)  // 0 por default
 
-console.log(itachi)
-console.log('---'.repeat(10))
-console.log(`[${itachi.name}] getAldea:`, itachi.getAldea)
-console.log(`[${itachi.name}] getStatus:`, itachi.getStatus)
+// Actualizar los atributos por medio de los setters
+missionCommanderNode.setStudents = 100
+missionCommanderNode.setLives = 3
 
-console.log('\n')
-
-rocklee.setAldea = 'Konoha'
-rocklee.setStatus = true
-
-console.log(rocklee)
-console.log('----'.repeat(10))
-console.log(`[${rocklee.name}] getAldea:`, rocklee.getAldea)
-console.log(`[${rocklee.name}] getStatus:`, rocklee.getStatus)
+console.log(missionCommanderNode.getStudents)
+console.log(missionCommanderNode.getLives)
