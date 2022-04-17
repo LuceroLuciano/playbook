@@ -52,6 +52,6 @@ const obito = new Ninja(
 console.log(itachi)
 console.log(obito)
 
-// Accede al metodo getInfo()
+// Acceder al metodo getInfo()
 console.log(itachi.getInfo())
 console.log(obito.getInfo())
