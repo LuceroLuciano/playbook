@@ -1,8 +1,9 @@
 // Clases y Objetos
 // Ejemplo 1: Crear una clase vacia
 
-class Ninja {
+class Person {
 
 }
 
-console.log(Ninja)
+console.log("Ejemplo de una clase vacia")
+console.log(Person)  //[class Person]
