@@ -1,36 +1,21 @@
 // Ejemplo 3: Instanciar un objeto con atributos.
 
 // Crear clase 
-class Ninja {
-    // atributos que tiene el objeto
-    constructor(name, age, ninjaRank) {
+class Student {
+    // El constructor nos permite instanciar un objeto y asignarle atributos, this nos ayuda a realizar esto.
+    constructor(name, age, subjects) {
         this.name = name
         this.age = age
-        this.ninjaRank = ninjaRank
+        this.subjects = subjects
     }
 }
 
-// Intnaciar objeto1
-const itachi = new Ninja(
-    'Itachi',
-    '21',
-    {
-        rank: 'Ambu',
-        record: '012110',
-        promotionToChunin: '10 años'
-    }
+// Crear un objeto de la clase Student (Instanciar objeto1)
+const luceroStudent = new Student(
+    'Lucero',
+    '19',
+    ["NodeJS", "Python"]
 )
 
-// Instancar objeto2
-const obito = new Ninja(
-    'Obito',
-    '31',
-    {
-        rank: 'Chunin',
-        record: '010886',
-        promotionToChunin: '11 años'
-    }
-)
-
-console.log(itachi)
-console.log(obito)
+console.log("Ejemplo: 3 Instanciar un objeto con atributos")
+console.log(luceroStudent)
