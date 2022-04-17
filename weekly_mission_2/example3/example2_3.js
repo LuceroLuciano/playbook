@@ -1,13 +1,14 @@
 // Ejemplo 2: Crear un objeto a partir de una clase.
 
 // Clase
-class Ninja {
+class Pet {
 
 }
 
-// Objeto
-const itachi = new Ninja()
-const obito = new Ninja()
+// Objetos
+const myPet1 = new Pet()
+const myPet2 = new Pet()
 
-console.log(itachi)
-console.log(obito)
+console.log("Ejemplo 2: Crear un objeto a partir de una clase")
+console.log(myPet1)
+console.log(myPet2)
