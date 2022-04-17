@@ -1,49 +1,31 @@
 //  Ejemplo 4: Métodos en los objetos.
 
-class Ninja {
-    constructor(name, age, ninjaRank) {
+class Repository {
+    constructor(name, author, language, stars) {
         this.name = name
-        this.age = age
-        this.ninjaRank = ninjaRank
+        this.author = author
+        this.language = language
+        this.stars = stars
     }
 
-    // Metodo
+    // Metodo get es una función que ejecutará cualquier objeto instanciado de esta clase
     getInfo() {
         return `
-            NINJA, ${this.name.toUpperCase()}
-            ${'---'.repeat(10)}
-            Edad: ${this.age}
-            Rango ninja: ${this.ninjaRank.rank}
-            Ascenso a chunin: ${this.ninjaRank.promotionToChunin}
+            Repository ${this.name.toUpperCase()}
+            has ${this.stars}
         `
     }
 }
 
 // Instanciar objeto1
-const itachi = new Ninja (
-    'Itachi',
-    '21',
-    {
-        rank: 'Ambu',
-        record: '012110',
-        promotionToChunin: '10 años'
-    }
+const repositoryInfo = new Repository(
+    'Luz',
+    'Lucero',
+    ['Python', 'JS', 'NodeJS'],
+    '1000'
 )
 
-// Instanciar objeto2
-const obito = new Ninja (
-    'Obito',
-    '31',
-    {
-        rank: 'Chunin',
-        record: '010886',
-        promotionToChunin: '11 años'
-    }
-)
-
-console.log(itachi)
-console.log(obito)
+console.log(repositoryInfo)
 
 // Acceder al metogo getInfo()
-console.log(itachi.getInfo())
-console.log(obito.getInfo())
+console.log(repositoryInfo.getInfo())
