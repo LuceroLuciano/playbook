@@ -11,7 +11,7 @@ class PullRequest {
         this.dataCreated = new Date() // Esto guarda la fecha actual en la que se inicia el objeto
     }
 
-    // Método
+    // Método getter
     getInfo() {
         return `
             This PR is in the repo: ${this.repo}
