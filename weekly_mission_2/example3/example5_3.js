@@ -1,57 +1,42 @@
 // Ejemplo 5: Atributos con valores por default
 
-class Ninja {
-    constructor(name, age, ninjaRank) {
-        this.name = name
-        this.age = age
-        this.ninjaRank = ninjaRank
+class PullRequest {
+    constructor(repo, title, lines_changed) {
+        this.repo = repo
+        this.title = title
+        this.lines_changed = lines_changed
 
         // Atributos con valores por defecto
-        this.aldea = 'Konoha'
+        this.status = 'OPEN'
         this.dataCreated = new Date() // Esto guarda la fecha actual en la que se inicia el objeto
     }
 
     // Método
     getInfo() {
         return `
-            NINJA, ${this.name.toUpperCase()}
-            ${'---'.repeat(10)}
-            Edad: ${this.age}
-            Rango ninja: ${this.ninjaRank.rank}
-            Ascenso a chunin: ${this.ninjaRank.promotionToChunin}
-            Aldea: ${this.aldea}
-            ${'---'.repeat(10)}
-            Fecha de creación: ${this.dataCreated}
+            This PR is in the repo: ${this.repo}
+            (status: ${this.status})
+            and was created on ${this.dataCreated}
+
         `
     }
 }
 
 
 // Instanciar Objeto1
-const itachi = new Ninja(
-    'Itachi',
-    '21',
-    {
-        rank: 'Ambu',
-        record: '012110',
-        promotionToChunin: '10 años'
-    }
+const myPR1 = new PullRequest(
+    'LaunchX',
+    'Mi primer PR',
+    100
 )
 
 // Instanciar objeto2
-const obito = new Ninja(
-    'Obito',
-    '31',
-    {
-        rank: 'Chunin',
-        record: '010886',
-        promotionToChunin: '11 años'
-    }
+const myPR2 = new PullRequest(
+    'LaunchX',
+    'Mi segundo PR',
+    99
 )
 
-console.log(itachi)
-console.log(obito)
-
-// Acceder al metodo getInfo()
-console.log(itachi.getInfo())
-console.log(obito.getInfo())
+console.log("Ejemplo 5: Atributos con valores por default")
+console.log(myPR1.getInfo())
+console.log(myPR2.getInfo())
