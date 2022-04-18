@@ -1,3 +1,4 @@
+// importando la case hija 
 import Viajero from './viajero.js'
 
 /*
