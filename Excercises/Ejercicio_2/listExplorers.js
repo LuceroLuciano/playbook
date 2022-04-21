@@ -109,3 +109,5 @@ const explorers = [
     }
 
     console.log(`La suma de los ejercicios completados de los explorers es: ${sumAllExcercisesCompleted(explorers)}`)
+
+    // 7. Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
