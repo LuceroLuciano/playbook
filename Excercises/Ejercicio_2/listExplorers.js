@@ -95,3 +95,17 @@ const explorers = [
    console.log("5. Buscar el primer explorer que sea de la CDMX, usando FIND")
    const findExplorerOfCdmx = explorers.find((city) => city.city == "CDMX")
    console.log(findExplorerOfCdmx)
+
+   
+   // 6. Obten la suma de todos los excercises_completed, usando REDUCE
+    console.log("---".repeat(25))
+    console.log('6. Obten la suma de todos los excercises_completed, usando REDUCE')
+    const sumAllExcercisesCompleted = function (excercisesExplorerList) {
+        // recorre la lista y se crea una nueva lista con MAP
+        const excercisesCompleted = excercisesExplorerList.map(excercises => excercises.exercises_completed)
+        console.log(excercisesCompleted)
+        const totalExcercisesCompleted = excercisesCompleted.reduce((acc, element) => acc + element)
+        return totalExcercisesCompleted
+    }
+
+    console.log(`La suma de los ejercicios completados de los explorers es: ${sumAllExcercisesCompleted(explorers)}`)
