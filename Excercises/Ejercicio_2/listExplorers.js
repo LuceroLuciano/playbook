@@ -63,3 +63,7 @@ const explorers = [
    console.log("1. Imprime el nombre de cada explorer en la lista: \n")
    explorers.forEach((nameExplorer) => console.log(nameExplorer.name))
    
+   // 2. Imprime el stack de cada explorer usando FOR EACH
+   console.log("---".repeat(25))
+   console.log("2. Imprime el stack de cada explorer usando FOR EACH: \n")
+   explorers.forEach((stackExplorer) => console.log(stackExplorer.stack))
