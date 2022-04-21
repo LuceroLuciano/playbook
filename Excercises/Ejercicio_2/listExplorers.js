@@ -67,3 +67,10 @@ const explorers = [
    console.log("---".repeat(25))
    console.log("2. Imprime el stack de cada explorer usando FOR EACH: \n")
    explorers.forEach((stackExplorer) => console.log(stackExplorer.stack))
+
+   // 3. Crea una nueva lista con las listas de stacks de cada explorer usando MAP
+   console.log("---".repeat(25))
+   console.log("3. Crea una nueva lista con las listas de stacks de cada explorer usando MAP: \n")
+   // MAP recorre una lista y crea una nueva
+   const newStackListExplorers = explorers.map(function(stackExplorers){return stackExplorers.stack})
+   console.log(newStackListExplorers)
