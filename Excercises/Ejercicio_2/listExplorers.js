@@ -63,7 +63,7 @@ const explorers = [
    console.log("1. Imprime el nombre de cada explorer en la lista: \n")
    explorers.forEach((nameExplorer) => console.log(nameExplorer.name))
    
-   
+
    // 2. Imprime el stack de cada explorer usando FOR EACH
    console.log("---".repeat(25))
    console.log("2. Imprime el stack de cada explorer usando FOR EACH: \n")
@@ -78,7 +78,7 @@ const explorers = [
    console.log(newStackListExplorers)
 
 
-   /* Obtén la lista de explorers que tengan en su stack "js", 
+   /* 4. Obtén la lista de explorers que tengan en su stack "js", 
    usa FILTER (para validar un elemento en un lista se usa el método includes)*/
    console.log("---".repeat(25))
    console.log('4. Obtén la lista de explorers que tengan en su stack "js",usando FILTER y el método includes')
@@ -90,4 +90,8 @@ const explorers = [
    console.log(explorersWithStackJs)
 
     
-   
+   // 5. Buscar el primer explorer que sea de l CDMX, usando FIND
+   console.log("---".repeat(25))
+   console.log("5. Buscar el primer explorer que sea de la CDMX, usando FIND")
+   const findExplorerOfCdmx = explorers.find((city) => city.city == "CDMX")
+   console.log(findExplorerOfCdmx)
