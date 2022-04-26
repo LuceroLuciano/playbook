@@ -110,4 +110,10 @@ const explorers = [
 
     console.log(`La suma de los ejercicios completados de los explorers es: ${sumAllExcercisesCompleted(explorers)}`)
 
-    // 7. Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
+    
+    // 7. Obten la validación si al menos uno de los explorers tiene la propiedad excercisesFinished
+    // en frontend como true, usa SOME
+    console.log("---".repeat(25))
+    console.log('7. Obten la validación si al menos uno de los explorers tiene la propiedad excercisesFinished en frontend como true, usa SOME')    
+    const areExcercisesFineshedSomeTrue = explorers.some(explorer => explorer.missions.frontend.exercisesFinished === true)
+    console.log(areExcercisesFineshedSomeTrue)
