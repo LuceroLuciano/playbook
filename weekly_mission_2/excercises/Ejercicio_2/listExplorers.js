@@ -116,3 +116,10 @@ const explorers = [
     console.log('7. Obten la validación si al menos uno de los explorers tiene la propiedad excercisesFinished en frontend como true, usa SOME')    
     const areExcercisesFineshedSomeTrue = explorers.some(explorer => explorer.missions.frontend.exercisesFinished === true)
     console.log(areExcercisesFineshedSomeTrue)
+
+    // 8. Obten la validadción si todos los explorers tienen la propiedad isFinished de
+    // onboarding como true. Usa EVERY
+    console.log("---".repeat(25))
+    console.log('8. Obten la validadción si todos los explorers tienen la propiedad isFinished de onboarding como true. Usa EVERY')    
+    const allExplorersHaveTrueInIsfinished = explorers.every((explorerisFinished) => explorerisFinished.missions.onboarding.isFinished === true)
+    console.log(allExplorersHaveTrueInIsfinished)
