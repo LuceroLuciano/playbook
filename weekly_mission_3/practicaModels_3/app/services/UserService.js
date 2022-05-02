@@ -5,13 +5,8 @@ class UserService {
         return new User(id, username, name, "Sin bio")
     }
 
-    static getInfo(id, usernamem, name, bio){
-        return `
-                ${this.id}
-                ${this.username}
-                ${this.name}
-                ${this.bio}
-                `
+    static getInfo(objectUser){
+        return [objectUser.id, objectUser.username, objectUser.name, objectUser.bio]                
     }
 }
 
