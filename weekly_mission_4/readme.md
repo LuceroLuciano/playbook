@@ -8,7 +8,7 @@
 - [Link a repo](https://github.com/LuceroLuciano/FizzBuzz)
 
 
-# Semana 5 
+# Semana 4 
 
 Proyectos desarrollados en la semana 3:
 
